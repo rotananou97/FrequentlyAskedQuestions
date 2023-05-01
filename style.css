@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+  background-image: url("./kb4.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordian {
+  background-color: white;
+  width: 800px;
+  height: 460px;
+  border-radius: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.title-header {
+  text-align: center;
+  padding: 25px;
+}
+.question {
+  font-size: 20px;
+  padding: 25px 0px;
+  border-bottom: solid 2px;
+  border-left: 10px;
+  position: relative;
+}
+.answer {
+  padding-top: 8px;
+  line-height: 1.5;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.question::after {
+  content: "+";
+  position: absolute;
+  right: -2px;
+}
+.active-toggle .answer{
+  height: 100px;
+}
